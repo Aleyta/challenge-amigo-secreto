@@ -1,1 +1,1 @@
-Creacion del repositorio y agregar archivos
+Creacion del repositorio y se agregaron archivos
