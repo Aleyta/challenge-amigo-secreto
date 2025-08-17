@@ -1,10 +1,10 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
+    --color-primary: purple;
+    --color-secondary: black;
     --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
+    --color-button: pink;
     --color-button-hover: #e55720;
-    --color-text: #444444;
+    --color-text: white;
     --color-white: #FFFFFF;
 }
 
@@ -43,8 +43,6 @@ body {
 .input-section {
     flex: 60%;
     background-color: var(--color-secondary);
-    border: 1px solid #000;
-    border-radius: 64px 64px 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,6 +57,7 @@ body {
     font-weight: 900;
     font-style: italic;
     color: var(--color-white);
+    padding: 5px;;
 }
 
 .section-title {
@@ -71,6 +70,11 @@ body {
 }
 
 /* Contenedores de entrada y botón */
+
+.button-container {
+    display: flex;
+    gap: 2em;
+}
 .input-wrapper {
     display: flex;
     justify-content: center;
@@ -116,13 +120,21 @@ button {
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
+    background-color: pink;
+    color: black;
     border-radius: 0 25px 25px 0;
 }
 
 .button-add:hover {
     background-color: #a1a1a1;
+}
+.btn-limpiar{
+     background-color: white;
+    color: black;
+}
+.btn-limpiar:hover{
+    background-color: gray;
+    color: white;
 }
 
 /* Listas */
@@ -130,10 +142,12 @@ ul {
     list-style-type: none;
     color: var(--color-text);
     font-family: "Inter", sans-serif;
-    font-size: 18px;
+    font-size: 25px;
     margin: 20px 0;
 }
-
+ul li{
+    text-align: left;
+}
 .result-list {
     margin-top: 15px;
     color: #05DF05;
@@ -149,8 +163,7 @@ ul {
     width: 100%;
     padding: 10px 40px;
     color: var(--color-white);
-    background-color: var(--color-button);
-    font-size: 16px;
+    background-color: purple;
 }
 
 .button-draw img {
@@ -158,5 +171,13 @@ ul {
 }
 
 .button-draw:hover {
-    background-color: var(--color-button-hover);
+    background-color: pink;
+    color: black;
+
+}
+.button-draw:disabled {
+    background: #898989;
+}
+.button-add:disabled {
+    background: #898989;
 }
