@@ -1,9 +1,9 @@
 :root {
-    --color-primary: purple;
+    --color-primary: blue;
     --color-secondary: black;
     --color-tertiary: #C4C4C4;
-    --color-button: pink;
-    --color-button-hover: #e55720;
+    --color-button: #32a7e5;
+    --color-button-hover: rgb(15, 2, 96);;
     --color-text: white;
     --color-white: #FFFFFF;
 }
@@ -64,7 +64,7 @@ body {
     font-family: "Inter", serif;
     font-size: 36px;
     font-weight: 700;
-    color: var(--color-primary);
+    color: var(--color-text);
     margin: 10px 0;
     text-align: center;
 }
@@ -108,35 +108,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilos de botón */
-button {
-    padding: 15px 30px;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    border: 2px solid #000;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-}
-
-.button-add {
-    background-color: pink;
-    color: black;
-    border-radius: 0 25px 25px 0;
-}
-
-.button-add:hover {
-    background-color: #a1a1a1;
-}
-.btn-limpiar{
-     background-color: white;
-    color: black;
-}
-.btn-limpiar:hover{
-    background-color: gray;
-    color: white;
-}
-
 /* Listas */
 ul {
     list-style-type: none;
@@ -156,6 +127,41 @@ ul li{
     text-align: center;
 }
 
+/* Estilos de botón */
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/*boton añadir*/
+.button-add {
+    background-color: var(--color-button);
+    color: black;
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: var(--color-button-hover);
+    color: white;
+}
+
+/*boton limpiar*/
+.btn-limpiar{
+     background-color: red;
+    color: white;
+}
+
+.btn-limpiar:hover{
+    background-color:rgba(233, 14, 14, 0.3);
+    color: white;
+}
+
+
 /* Botón de sortear título */
 .button-draw {
     display: flex;
@@ -163,7 +169,7 @@ ul li{
     width: 100%;
     padding: 10px 40px;
     color: var(--color-white);
-    background-color: purple;
+    background-color: #32a7e5;
 }
 
 .button-draw img {
@@ -171,13 +177,16 @@ ul li{
 }
 
 .button-draw:hover {
-    background-color: pink;
-    color: black;
-
+    background-color:var(--color-button-hover);
+    color: white;
 }
+
 .button-draw:disabled {
     background: #898989;
+    color: #898989;
 }
+
 .button-add:disabled {
     background: #898989;
+    color: #898989;
 }
