@@ -3,7 +3,7 @@
 
 let ListaDeNombres = [];
 
-//AGREGAR AMIGOS:
+//AÑADIR AMIGOS:
 
 function añadir()
 {
